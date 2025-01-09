@@ -23,7 +23,7 @@
     .nav-links {
         display: none;
         position: fixed;
-        top: 88px; /* Exact height of navbar + demo banner */
+        top: 53px; /* Update from 88px to match navbar height */
         left: 0;
         right: 0;
         background: #fff;
@@ -57,6 +57,39 @@
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Modal adjustments for mobile */
+    .modal {
+        align-items: flex-start;
+        padding-top: 90px; /* Reduced padding for mobile */
+    }
+
+    .modal-content {
+        margin: 0 auto;
+        padding: 2rem;
+        max-height: calc(100vh - 100px); /* Adjust height calculation */
+        width: 95%; /* Slightly wider on mobile */
+    }
+
+    /* Adjust security notice for mobile */
+    .security-notice {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    .security-notice i {
+        margin: 0 auto 0.5rem;
+    }
+
+    /* Adjust form elements for mobile */
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -71,5 +104,14 @@
     .about,
     .contact {
         padding: 3rem 1rem;
+    }
+
+    /* Further modal adjustments for smaller screens */
+    .modal {
+        padding-top: 80px;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
     }
 } 

@@ -37,9 +37,6 @@ The website is fully responsive and optimized for:
 
 ## 🔒 Security Features
 
-- Disabled right-click functionality
-- Protected against developer tools
-- Disabled text selection and copying
 - Clear demo/showcase warnings
 - Form input protection
 
