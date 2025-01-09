@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sharp Cut - Professional Barber Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="demo-banner">
+        <i class="fas fa-exclamation-triangle"></i>
+        This is a showcase website. No real appointments will be processed.
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>The Sharp Cut</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="book-now"><a href="#booking">Book Now</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to The Sharp Cut</h1>
+            <p>Where style meets precision</p>
+            <a href="#booking" class="cta-button">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="reveal">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <i class="fas fa-cut"></i>
+                <h3>Haircut</h3>
+                <p>Starting at $30</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-razor"></i>
+                <h3>Beard Trim</h3>
+                <p>Starting at $20</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-spray-can"></i>
+                <h3>Styling</h3>
+                <p>Starting at $15</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="reveal">Our Portfolio</h2>
+        <div class="portfolio-carousel reveal">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                            <img src="images/classicHairstyle.jpg" alt="Classic Cut">
+                            <div class="portfolio-overlay">
+                                <h3>Classic Cut</h3>
+                                <p>Professional men's haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                            <img src="images/fadeHairstyle.jpg" alt="Fade Style">
+                            <div class="portfolio-overlay">
+                                <h3>Fade Style</h3>
+                                <p>Modern fade haircut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                            <img src="images/beardStyling.jpg" alt="Beard Trim">
+                            <div class="portfolio-overlay">
+                                <h3>Beard Styling</h3>
+                                <p>Professional beard grooming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Simple Navigation -->
+                <button class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="images/barberShop.jpg" alt="Barber Shop">
+            <div class="about-text">
+                <h3>Professional Barber Services</h3>
+                <p>With over 10 years of experience, we provide top-quality haircuts and styling services. Our commitment to excellence and attention to detail ensures you'll leave looking and feeling your best.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@thesharpcut.com</p>
+                <p><i class="fas fa-location-dot"></i> 123 Main St, City, State 12345</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Sharp Cut. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <div class="security-notice">
+                <i class="fas fa-shield-alt"></i>
+                <p>Demo Version: This is a non-functional booking system for demonstration purposes only. 
+                No personal information will be stored or processed.</p>
+            </div>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service:</label>
+                    <select id="service" required>
+                        <option value="">Select a service</option>
+                        <option value="haircut">Haircut ($30)</option>
+                        <option value="beard">Beard Trim ($20)</option>
+                        <option value="styling">Styling ($15)</option>
+                        <option value="combo">Haircut & Beard Combo ($45)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <select id="time" required>
+                        <option value="">Select a time</option>
+                        <option value="9:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Notes:</label>
+                    <textarea id="notes" rows="3"></textarea>
+                </div>
+                <div class="demo-warning">
+                    <small>By clicking "Book Appointment", you acknowledge that this is a demo website and no actual booking will be made.</small>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Booking Confirmed!</h2>
+            <div id="confirmationDetails"></div>
+            <button class="ok-btn">OK</button>
+        </div>
+    </div>
+</body>
+</html> 
