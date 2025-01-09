@@ -423,7 +423,7 @@ footer {
     align-items: flex-start;
     z-index: 100000;
     backdrop-filter: blur(8px);
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .modal-content {
@@ -435,9 +435,13 @@ footer {
     margin: 100px auto 2rem auto;
     position: relative;
     animation: scaleIn 0.4s ease-out;
+    max-height: calc(90vh - 100px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) #f0f0f0;
 }
 
-/* Styling scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+/* Scrollbar Styles for Modal Content */
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
